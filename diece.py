@@ -1,7 +1,7 @@
 import random
 #Loop
 #Ask: roll the dice?
-choice input('Roll the dice? (y/n): ').lower()
+choice = input('Roll the dice? (y/n): ').lower()
 
 
 #If user enter y
@@ -16,6 +16,10 @@ if choice == 'y':
 elif choice == 'n':
     # Print thank you message
     print('Thank you for playing!') 
+    break
+else:
+    # Print error message
+    print('Invalid input. Please enter "y" to roll the dice or "n" to exit.')
 
 #  Print them
 #If user enters n
